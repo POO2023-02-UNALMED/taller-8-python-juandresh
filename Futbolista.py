@@ -1,5 +1,5 @@
-from Persona import Persona
-from Deportista import Deportista
+from deportista import Deportista
+from persona import Persona
 
 class Futbolista(Persona, Deportista):
 
@@ -11,7 +11,7 @@ class Futbolista(Persona, Deportista):
         self._golesMarcados = golesMarcados
         self._tarjetasRojas = tarjetasRojas
         self._piernaHabil = piernaHabil
-        Futbolista._listaFutbolistas.append(self)
+        futbolista._listaFutbolistas.append(self)
 
     def setGolesMarcados(self, golesMarcados):
         self._golesMarcados = golesMarcados
